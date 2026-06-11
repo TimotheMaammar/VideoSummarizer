@@ -1,0 +1,7 @@
+# Summarization runs through your local `claude` CLI (Claude Code), not a paid
+# API - so no LLM SDK dependency and no API key needed.
+youtube-transcript-api>=1.0
+
+# Whisper fallback (videos without subtitles)
+yt-dlp>=2024.0.0
+faster-whisper>=1.0.0
