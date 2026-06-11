@@ -146,11 +146,3 @@ Everything else is the Python **standard library**: `argparse`, `subprocess`,
 `urllib`, `pathlib`, `re`, `dataclasses`, `tempfile`. Requires **Python 3.9+**
 (`str | None` unions are kept lazy via `from __future__ import annotations`).
 
-## Limitations & ideas
-
-- **Whisper is slower than real time on CPU** for long videos. Use a smaller
-  model, or a CUDA GPU (auto-detected, with automatic CPU fallback) for a big
-  speedup.
-- **No transcript cache.** Re-running on the same source re-fetches and
-  re-summarizes.
-- **DRM-protected content** (Netflix, etc.) is out of scope.
